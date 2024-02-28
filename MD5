@@ -1,0 +1,17 @@
+7163cf6dcd48fbfc371d2d000b0c216c *DESCRIPTION
+91455e8015ce9912883fc908529d3a0c *LICENSE.note
+8d3a59e80ce3bc014896335aacdc7a75 *NAMESPACE
+1607bc72ef0c6f4ff47ff2b2c1a4b3a3 *NEWS.md
+e5438189dada9c464cdb83fe0cb2588c *R/data.R
+56738fa96c697e38dde6968be6252ef3 *R/vaxpmx.R
+646aae6d2829d0fb3d8f70f92b345765 *R/ve.R
+3e72acac27c8e1496ea3bf6e8d39f788 *README.md
+e93e45ffbf8b5385b03f8fb842ff8abf *data/data_temp.rda
+9585483db1349031bf77c0766236205f *inst/extdata/vaxpmx_mockupData.R
+ca94df43fedbc95d3241116e09d2418c *man/EfficacyCI.Rd
+851ccaef582ff399602fd4932ed468b0 *man/data_temp.Rd
+21ff5e3a7c21097b5526139ca122afe8 *man/glmParametricSampling.Rd
+56ec998dbe28e6756e1b3dd1d9eeaf7c *man/vaxpmx.Rd
+7db8d10343ca15c384d620a5f653e5fb *man/ve.Rd
+1c0e11f240995c1a510abeb134852cef *tests/testthat.R
+932794c39e9bbf03ffcd392ba93812a7 *tests/testthat/testve.R
