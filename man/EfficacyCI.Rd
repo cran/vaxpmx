@@ -29,7 +29,7 @@ data(data_temp)
 Data.vaccinated <- filter(data_temp, vaccine == 1)
 Data.control <- filter(data_temp, vaccine == 0)
 
-# Fit logistic model relating neutralizing titer to disease status, specific to serotype 2
+# Fit logistic model relating neutralizing titer to disease status
 logisticFit <- glm(disease_any ~ nAb1, data = data_temp, family = binomial())
 
 # Estimate 95\\% confidence interval of vaccine efficacy based on the fitted model

@@ -7,7 +7,7 @@
 ve(Fit, Data, nboot = 2000)
 }
 \arguments{
-\item{Fit}{an object of class inheriting from \code{"glm"} representing the fitted model}
+\item{Fit}{an object of class inheriting from \code{"glm"} or \code{"coxph"} representing the fitted model}
 
 \item{Data}{a data frame containing the variables in the fitted model; data must include a column called "vaccine" with binary indicator of vaccination status}
 
@@ -17,16 +17,24 @@ ve(Fit, Data, nboot = 2000)
 a value of vaccine efficacy \code{VE} and lower and upper bound of confidence interval \code{CI}
 }
 \description{
-Calculates vaccine efficacy and confidence interval as described in Dudasova et al., 2024, BMC Med Res Methodol
+Calculates vaccine efficacy and confidence interval as described in Dudasova et al., 2024, BMC Med Res Methodol and Dudasova et al., 2024, NPJ Vaccines
 }
 \examples{
+#' # Load required packages
+library(survival)
+
 # Load an example dataset
 data(data_temp)
 
 # Fit logistic model relating neutralizing titer to disease status
 logisticFit <- glm(disease_any ~ nAb1, data = data_temp, family = binomial())
 
-# Estimate vaccine efficacy and 95\\% confidence interval based on the fitted model
+# Fit Cox proportional hazards model relating neutralizing titer 
+# to time to disease or end of follow-up
+coxFit <- coxph(Surv(time_event, disease_any) ~ nAb1, data = data_temp)
+
+# Estimate vaccine efficacy and 95\\% confidence interval based on the fitted models
 ve(logisticFit, data_temp, nboot = 500)
+ve(coxFit, data_temp, nboot = 500)
 
 }

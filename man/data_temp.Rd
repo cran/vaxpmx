@@ -14,6 +14,7 @@ Data frame:
   \item{vaccine}{binary indicator of treatment arm, with value 1 in vaccinated and 0 in control subjects}
   \item{type_disease}{serotype of disease}
   \item{disease_any}{binary indicator of disease caused by any serotype}
+  \item{time_event}{time to disease or end of follow-up in days}
 }
 }
 \usage{

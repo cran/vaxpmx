@@ -8,7 +8,8 @@ type_disease <- rbinom(n = 600, size = 2, prob = 0.1)
 disease_any <- as.numeric(type_disease>0)
 disease_type1 <- as.numeric(type_disease==1)
 disease_type2 <- as.numeric(type_disease==2)
+time_event <- round(rnorm(600, mean = 365, sd = 50))
 
-data_temp <- data.frame(ID, nAb1, nAb2, group, vaccine, type_disease, disease_any)
+data_temp <- data.frame(ID, nAb1, nAb2, group, vaccine, type_disease, disease_any, time_event)
 
-# save(data_temp, file = "data/data_temp.rda")
+#save(data_temp, file = "data/data_temp.rda")

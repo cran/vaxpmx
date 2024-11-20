@@ -14,8 +14,9 @@ source code license, in order to use this software.
 * ggplot2 - https://cran.r-project.org/web/packages/ggplot2/index.html
 * dplyr - https://cran.r-project.org/web/packages/dplyr/index.html
 
-  GNU License (https://opensource.org/licenses/gpl-license)
+  GNU License (or adaptations) (https://opensource.org/licenses/gpl-license)
 * MASS - https://cran.r-project.org/web/packages/MASS/index.html
+* survival - https://cran.r-project.org/web/packages/survival/index.html
 
 --------------------------------------------------
 LICENSE 
